@@ -1,1 +1,80 @@
+#####
+#  - platform: rest
+#    resource: https://prodapi.metweb.ie/weather/short/Kerry
+#    Irish County Weather Short term forecast I sensor consumes the data 
+#
+#####
+
+sensor:
+  - platform: rest
+    resource_template: https://prodapi.metweb.ie/weather/short/{{ states('input_select.county')}}
+    name: Irish Weather
+    scan_interval: 30
+    json_attributes:
+      - temperature
+      - temperatureClass
+      - symbol
+      - weatherDescription
+      - weather
+      - windSpeed
+      - windGust
+      - windDirection
+      - humidity
+      - rainfall
+      - pressure
+      - station
+      - canonicalWindDirection
+      - time
+      - highestWarning
+    value_template: "OK"
+  - platform: template
+    sensors:
+      temperature:
+        friendly_name: "Temperature"
+        value_template: "{{ state_attr('sensor.irish_weather', 'temperature') }}"
+      temperatureclass:
+        friendly_name: "temperature classed as"
+        value_template: "{{ state_attr('sensor.irish_weather', 'temperatureClass') }}"
+      symbol:      #weather map symbol
+        friendly_name: "weather icon"
+        value_template: "{{ state_attr('sensor.irish_weather', 'symbol') }}"
+      weatherdescription:
+        friendly_name: "weatherdescription"
+        value_template: "{{ state_attr('sensor.irish_weather', 'weatherDescription') }}"
+      weather:
+        friendly_name: "weather"
+        value_template: "{{ state_attr('sensor.irish_weather', 'weather') }}"
+      windspeed:
+        friendly_name: "Wind Speed"
+        value_template: "{{ state_attr('sensor.irish_weather', 'windSpeed') }}"
+      windgust:
+        friendly_name: "Wind Gust"
+        value_template: "{{ state_attr('sensor.irish_weather', 'windGust') }}"
+      winddirection:
+        friendly_name: "Wind Direction"
+        value_template: "{{ state_attr('sensor.irish_weather', 'windDirection') }}"
+      windspeed:
+        friendly_name: "Wind Speed"
+        value_template: "{{ state_attr('sensor.irish_weather', 'windSpeed') }}"
+      humidity:
+        friendly_name: "Humidity"
+        value_template: "{{ state_attr('sensor.irish_weather', 'humidity') }}"
+      rainfall:
+        friendly_name: "Rain Fall mm"
+        value_template: "{{ state_attr('sensor.irish_weather', 'rainfall') }}"
+      pressure:
+        friendly_name: "Pressure millibars"
+        value_template: "{{ state_attr('sensor.irish_weather', 'pressure') }}"
+      station:
+        friendly_name: "Weather Station"
+        value_template: "{{ state_attr('sensor.irish_weather', 'station') }}"
+      canonicalwinddirection:
+        friendly_name: "Wind Direction"
+        value_template: "{{ state_attr('sensor.irish_weather', 'canonicalWindDirection') }}"
+      time:
+        friendly_name: "Forecast updated"
+        value_template: "{{ state_attr('sensor.irish_weather', 'time') }}"
+      highestwarning:
+        friendly_name: "highest warning level"
+        value_template: "{{ state_attr('sensor.irish_weather', 'highestWarning') }}"
 
