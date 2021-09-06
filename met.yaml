@@ -53,9 +53,6 @@ sensor:
       winddirection:
         friendly_name: "Wind Direction"
         value_template: "{{ state_attr('sensor.irish_weather', 'windDirection') }}"
-      windspeed:
-        friendly_name: "Wind Speed"
-        value_template: "{{ state_attr('sensor.irish_weather', 'windSpeed') }}"
       humidity:
         friendly_name: "Humidity"
         value_template: "{{ state_attr('sensor.irish_weather', 'humidity') }}"
