@@ -6,9 +6,14 @@ In the frontend of HomeAssistant you need to create a dropdown list with at leas
 To use this you could add this into configuration.yaml but better is to put it into a folder called integrations just ensure that you have
 
 homeassistant:
+
   packages: !include_dir_named integrations
   
-at the top of your configuration.yaml file   
+at the top of your configuration.yaml file (packages should be indented 2 spaces) 
+I have added a file to create a pictures entity card with it includes all 86 weather icon states
+
 and from this point forward you can create a new yaml file in your integrations folder for each additional thing you want to add to your configuration.yaml file.
 mixing up different integrations in configuration.yaml is bad and can cause hard to fix bugs and stop existing integrations from working.
 Hope you have fun with this and it helps you get started writing your own restful integrations.
+
+
