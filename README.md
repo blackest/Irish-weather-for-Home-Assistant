@@ -1,5 +1,8 @@
 # Irish-weather-for-Home-Assistant
-A Simple use of the rest sensor to get the short term forecast for Ireland into home assistant
+A Simple use of the rest sensor to get the short term forecast for the Republic of Ireland into Home Assistant.
+
+It seems Northern Ireland is covered by the UK Met office...
+
 Home Assistant allows you to create sensors from data available on the internet. This Yaml file creates a Single sensor which stores the data as attributes The second half of the file creates further sensors which use the attributes as states which can be displayed recorded and acted on. 
 
 In the frontend of HomeAssistant you need to create a dropdown list with at least 1 county in it You could use a text entrybox instead  once that is done you can make a card in the front end and do something with the data. 
