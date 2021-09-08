@@ -1,1 +1,33 @@
+############
+# best used as a grid card to constrain the size
+# reads the state of sensor.symbol and replaces the default image with another 
+# that matches the state there are other cdns that could be used but the codes may not match 
+# you can use a tap action to say navigate to a dedicated weather page 
+############
+entity: sensor.symbol
+image: https://devcdn.metweb.ie/images/web-meteogram-7day/02n.png?v=4001
+show_name: false
+show_state: false
+state_image:
+  01d: https://devcdn.metweb.ie/images/web-meteogram-7day/01d.png?v=4001
+  02d: https://devcdn.metweb.ie/images/web-meteogram-7day/02d.png?v=4001
+  03d: https://devcdn.metweb.ie/images/web-meteogram-7day/03d.png?v=4001
+  04d: https://devcdn.metweb.ie/images/web-meteogram-7day/04d.png?v=4001
+  05d: https://devcdn.metweb.ie/images/web-meteogram-7day/05d.png?v=4001
+  06d: https://devcdn.metweb.ie/images/web-meteogram-7day/06d.png?v=4001
+  07d: https://devcdn.metweb.ie/images/web-meteogram-7day/07d.png?v=4001
+  08d: https://devcdn.metweb.ie/images/web-meteogram-7day/08d.png?v=4001
+  01n: https://devcdn.metweb.ie/images/web-meteogram-7day/01n.png?v=4001
+  02n: https://devcdn.metweb.ie/images/web-meteogram-7day/02n.png?v=4001
+  03n: https://devcdn.metweb.ie/images/web-meteogram-7day/03n.png?v=4001
+  04n: https://devcdn.metweb.ie/images/web-meteogram-7day/04n.png?v=4001
+  05n: https://devcdn.metweb.ie/images/web-meteogram-7day/05n.png?v=4001
+  06n: https://devcdn.metweb.ie/images/web-meteogram-7day/06n.png?v=4001
+  07n: https://devcdn.metweb.ie/images/web-meteogram-7day/07n.png?v=4001
+  08n: https://devcdn.metweb.ie/images/web-meteogram-7day/08n.png?v=4001
+  40n: https://devcdn.metweb.ie/images/web-meteogram-7day/40n.png?v=4001
+type: picture-entity
+#tap_action:
+#  action: navigate
+#  navigation_path: /
 
