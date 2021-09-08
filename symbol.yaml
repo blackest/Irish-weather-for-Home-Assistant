@@ -1,6 +1,6 @@
 ############
 # best used as a grid card to constrain the size
-# reads the state of sensor.symbol and replaces the default image with another 
+# reads the state of sensor.symbol and replaces the default image with one of 86 icons 
 # that matches the state there are other cdns that could be used but the codes may not match 
 # you can use a tap action to say navigate to a dedicated weather page 
 ############
@@ -25,10 +25,7 @@ state_image:
   13d: https://devcdn.metweb.ie/images/web-meteogram-7day/13d.png?v=4001
   14d: https://devcdn.metweb.ie/images/web-meteogram-7day/14d.png?v=4001
   15d: https://devcdn.metweb.ie/images/web-meteogram-7day/15d.png?v=4001
-  16d: https://devcdn.metweb.ie/images/web-meteogram-7day/16d.png?v=4001
-  17d: https://devcdn.metweb.ie/images/web-meteogram-7day/17d.png?v=4001
-  18d: https://devcdn.metweb.ie/images/web-meteogram-7day/18d.png?v=4001
-  19d: https://devcdn.metweb.ie/images/web-meteogram-7day/19d.png?v=4001
+  
   20d: https://devcdn.metweb.ie/images/web-meteogram-7day/20d.png?v=4001
   21d: https://devcdn.metweb.ie/images/web-meteogram-7day/21d.png?v=4001
   22d: https://devcdn.metweb.ie/images/web-meteogram-7day/22d.png?v=4001
@@ -44,11 +41,7 @@ state_image:
   32d: https://devcdn.metweb.ie/images/web-meteogram-7day/32d.png?v=4001
   33d: https://devcdn.metweb.ie/images/web-meteogram-7day/33d.png?v=4001
   34d: https://devcdn.metweb.ie/images/web-meteogram-7day/34d.png?v=4001
-  35d: https://devcdn.metweb.ie/images/web-meteogram-7day/35d.png?v=4001
-  36d: https://devcdn.metweb.ie/images/web-meteogram-7day/36d.png?v=4001
-  37d: https://devcdn.metweb.ie/images/web-meteogram-7day/37d.png?v=4001
-  38d: https://devcdn.metweb.ie/images/web-meteogram-7day/38d.png?v=4001
-  39d: https://devcdn.metweb.ie/images/web-meteogram-7day/39d.png?v=4001
+  
   40d: https://devcdn.metweb.ie/images/web-meteogram-7day/40d.png?v=4001
   41d: https://devcdn.metweb.ie/images/web-meteogram-7day/41d.png?v=4001
   42d: https://devcdn.metweb.ie/images/web-meteogram-7day/42d.png?v=4001
@@ -60,6 +53,8 @@ state_image:
   48d: https://devcdn.metweb.ie/images/web-meteogram-7day/48d.png?v=4001
   49d: https://devcdn.metweb.ie/images/web-meteogram-7day/49d.png?v=4001
   50d: https://devcdn.metweb.ie/images/web-meteogram-7day/50d.png?v=4001
+  51d: https://devcdn.metweb.ie/images/web-meteogram-7day/51d.png?v=4001
+  52d: https://devcdn.metweb.ie/images/web-meteogram-7day/52d.png?v=4001
   
   01n: https://devcdn.metweb.ie/images/web-meteogram-7day/01n.png?v=4001
   02n: https://devcdn.metweb.ie/images/web-meteogram-7day/02n.png?v=4001
@@ -76,10 +71,7 @@ state_image:
   13n: https://devcdn.metweb.ie/images/web-meteogram-7day/13n.png?v=4001
   14n: https://devcdn.metweb.ie/images/web-meteogram-7day/14n.png?v=4001
   15n: https://devcdn.metweb.ie/images/web-meteogram-7day/15n.png?v=4001
-  16n: https://devcdn.metweb.ie/images/web-meteogram-7day/16n.png?v=4001
-  17n: https://devcdn.metweb.ie/images/web-meteogram-7day/17n.png?v=4001
-  18n: https://devcdn.metweb.ie/images/web-meteogram-7day/18n.png?v=4001
-  19n: https://devcdn.metweb.ie/images/web-meteogram-7day/19n.png?v=4001
+  
   20n: https://devcdn.metweb.ie/images/web-meteogram-7day/20n.png?v=4001
   21n: https://devcdn.metweb.ie/images/web-meteogram-7day/21n.png?v=4001
   22n: https://devcdn.metweb.ie/images/web-meteogram-7day/22n.png?v=4001
@@ -95,11 +87,7 @@ state_image:
   32n: https://devcdn.metweb.ie/images/web-meteogram-7day/32n.png?v=4001
   33n: https://devcdn.metweb.ie/images/web-meteogram-7day/33n.png?v=4001
   34n: https://devcdn.metweb.ie/images/web-meteogram-7day/34n.png?v=4001
-  35n: https://devcdn.metweb.ie/images/web-meteogram-7day/35n.png?v=4001
-  36n: https://devcdn.metweb.ie/images/web-meteogram-7day/36n.png?v=4001
-  37n: https://devcdn.metweb.ie/images/web-meteogram-7day/37n.png?v=4001
-  38n: https://devcdn.metweb.ie/images/web-meteogram-7day/38n.png?v=4001
-  39n: https://devcdn.metweb.ie/images/web-meteogram-7day/39n.png?v=4001
+  
   40n: https://devcdn.metweb.ie/images/web-meteogram-7day/40n.png?v=4001
   41n: https://devcdn.metweb.ie/images/web-meteogram-7day/41n.png?v=4001
   42n: https://devcdn.metweb.ie/images/web-meteogram-7day/42n.png?v=4001
@@ -110,7 +98,10 @@ state_image:
   47n: https://devcdn.metweb.ie/images/web-meteogram-7day/47n.png?v=4001
   48n: https://devcdn.metweb.ie/images/web-meteogram-7day/48n.png?v=4001
   49n: https://devcdn.metweb.ie/images/web-meteogram-7day/49n.png?v=4001
-  50n: https://devcdn.metweb.ie/images/web-meteogram-7day/50n.png?v=4001  
+  50n: https://devcdn.metweb.ie/images/web-meteogram-7day/50n.png?v=4001
+  51n: https://devcdn.metweb.ie/images/web-meteogram-7day/51n.png?v=4001
+  52n: https://devcdn.metweb.ie/images/web-meteogram-7day/52n.png?v=4001
+
 type: picture-entity
 #tap_action:
 #  action: navigate
