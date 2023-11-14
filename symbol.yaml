@@ -2,7 +2,7 @@
 # best used as a grid card to constrain the size
 # reads the state of sensor.symbol and replaces the default image with one of 86 icons 
 # that matches the state there are other cdns that could be used but the codes may not match 
-# you can use a tap action to say navigate to a dedicated weather page 
+# you can use a tap action to say navigate to a dedicated weather page This address maybe out of date
 ############
 entity: sensor.symbol
 image: https://devcdn.metweb.ie/images/web-meteogram-7day/02n.png?v=4001
